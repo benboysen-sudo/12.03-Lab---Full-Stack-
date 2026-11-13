@@ -1,8 +1,156 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font: 15px "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: #e3e8ef;
+  background: #1c2027;
 }
 
 a {
-  color: #00B7FF;
+  color: #5aa9ff;
+}
+
+h1 {
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+h1 + p {
+  margin-top: 0;
+  color: #8b95a5;
+}
+
+h2 {
+  font-size: 18px;
+  color: #c9d3e0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333a45;
+  margin: 28px 0;
+}
+
+.todos {
+  padding-left: 22px;
+  color: #8b95a5;
+}
+
+.todos li {
+  background: #262b34;
+  border: 1px solid #333a45;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.task-name {
+  font-weight: 600;
+  color: #e3e8ef;
+}
+
+.done .task-name {
+  text-decoration: line-through;
+  color: #6b7482;
+}
+
+.status {
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.status.completed {
+  background: #1f3d2c;
+  color: #6fd394;
+}
+
+.status.pending {
+  background: #1f3048;
+  color: #7db8ff;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+form {
+  display: inline-flex;
+  gap: 6px;
+  margin: 0;
+}
+
+input[type='text'] {
+  padding: 6px 10px;
+  border: 1px solid #3a4250;
+  border-radius: 5px;
+  background: #1c2027;
+  color: #e3e8ef;
+  font: inherit;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+label {
+  align-self: center;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #3b82f6;
+  border-radius: 5px;
+  background: #3b82f6;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f6fd8;
+}
+
+button.secondary,
+button.edit-toggle {
+  background: transparent;
+  color: #7db8ff;
+}
+
+button.secondary:hover,
+button.edit-toggle:hover {
+  background: #1f3048;
+}
+
+.empty {
+  color: #6b7482;
+}
+
+/* Keep hidden elements hidden even though forms use display: inline-flex */
+[hidden] {
+  display: none !important;
+}
+
+button.delete {
+  background: transparent;
+  color: #f08080;
+  border-color: #a94442;
+}
+
+button.delete:hover {
+  background: #3a2326;
 }

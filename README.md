@@ -1,11 +1,7 @@
-# CS208 Full Stack Final Project
+# CS208 Full Stack Lab - Simple TODO Application
 
-## Documentation
+- Name: Benjamin Boysen
+- GitHub: [https://github.com/benboysen-sudo](https://github.com/benboysen-sudo)
+- Term: Fall 2026
 
-- Running the example project is documented [here](docs/example_project.md)
-- An example README is provided [here](docs/README_example.md)
-
-Students must **replace** this README with a README that is specific to your
-project. **IMPORTANT**: If you do not complete the README, your project will not
-be graded, and you will receive a zero. The TA will not guess how to set up,
-configure, and run your project.
+A TODO app built with Node.js, Express, Pug, and MariaDB that lets you add, edit, complete, and delete tasks (blank tasks are rejected). To run it on Codespaces, install the database with `./setup_scripts/install_db.sh` (set the root password to `12345`), create the tables with `sudo mysql -u root -p < ./setup_scripts/create_demo_table.sql`, then run `npm install` and `npm start` and open the forwarded port 3000.
